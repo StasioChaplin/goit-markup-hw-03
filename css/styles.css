@@ -23,6 +23,10 @@ body {
   list-style: none;
 }
 
+.container {
+  width: 1440px;
+}
+
 .contacts {
   font-style: normal;
 }
@@ -41,6 +45,14 @@ body {
 
 .header {
   background: var(--nondescript-color);
+  height: 72px;
+  display: flex;
+  padding-top: 24px;
+}
+
+.logo-nav {
+  display: flex;
+  margin: 0 332px 24px 156px;
 }
 
 .header-logo-tail {
@@ -51,6 +63,10 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-color);
+}
+
+.main-nav {
+  display: flex;
 }
 
 .nav-link {
@@ -84,19 +100,26 @@ body {
 /* =================== HERO ================= */
 
 .hero {
+  height: 600px;
   background-color: var(--secondary-color);
+  padding-top: 188px;
 }
 
 .hero-title {
+  width: 496px;
   font-family: var(--main-font);
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-left: 472px;
+  margin-bottom: 48px;
   color: var(--nondescript-color);
 }
 
 .hero-btn {
+  width: 169px;
+  height: 56px;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
@@ -107,6 +130,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  margin-left: 636px;
 }
 
 .hero-btn:hover,
