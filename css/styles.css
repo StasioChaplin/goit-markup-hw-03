@@ -182,17 +182,23 @@ img {
   padding-top: 120px;
 }
 
-.features-list {
+.features-list,
+.functions-list,
+.team-list {
   display: flex;
   justify-content: space-between;
 }
 
-.features-list-item {
+.features-list-heading {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+}
+
+.features-list-item {
+  width: 264px;
 }
 
 .features-text {
@@ -201,15 +207,30 @@ img {
   color: var(--main-color);
 }
 
+/* ===================== FUNCTIONS =========================== */
+
+.functions-container,
+.team-container {
+  padding: 120px 156px;
+}
+
+.functions-title {
+  margin-bottom: 72px;
+}
+
 /* ===================== TEAM & PROJECTS ===================== */
 
-.team-cards {
+.team-container {
   background: var(--minor-color);
 }
 
 .team-member-card,
 .project-card {
   background: var(--nondescript-color);
+}
+
+.team-member-card {
+ 
 }
 
 .card-title {
