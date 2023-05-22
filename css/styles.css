@@ -44,11 +44,15 @@ img {
 }
 
 .container {
-  width: 1440px;
+  width: 1158px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
 }
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
 .logo {
@@ -65,14 +69,23 @@ img {
 
 .header {
   background: var(--nondescript-color);
-  height: 72px;
-  display: flex;
   padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.container-header {
+  display: flex;
 }
 
 .logo-nav {
   display: flex;
-  margin: 0 332px 24px 156px;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 76px;
 }
 
 .header-logo-tail {
@@ -87,9 +100,7 @@ img {
 
 .main-nav {
   display: flex;
-  justify-content: space-between;
-  width: 261px;
-  margin-left: 76px;
+  gap: 40px;
 }
 
 .nav-link {
@@ -99,6 +110,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -108,15 +120,7 @@ img {
 
 .contacts-nav {
   display: flex;
-  min-width: 340px;
-}
-
-.contacts-item:last-child {
-  margin-right: 0
-}
-
-.contacts-item {
-  margin-right: 40px;
+  gap: 40px;
 }
 
 .contacts-link {
@@ -148,8 +152,7 @@ img {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  margin-left: 472px;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
   color: var(--nondescript-color);
 }
 
@@ -166,7 +169,8 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 636px;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-btn:hover,
@@ -178,15 +182,16 @@ img {
 
 /* ==================== FEATURES ======================= */
 
-.features-container {
-  padding-top: 120px;
+.features-container,
+.team-container {
+  padding: 120px 0;
 }
 
 .features-list,
 .functions-list,
 .team-list {
   display: flex;
-  justify-content: space-between;
+  gap: 24px;
 }
 
 .features-list-heading {
@@ -195,10 +200,11 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  margin-bottom: 8px;
 }
 
 .features-list-item {
-  width: 264px;
+  width: calc((100% - 72px) / 4);
 }
 
 .features-text {
@@ -209,9 +215,8 @@ img {
 
 /* ===================== FUNCTIONS =========================== */
 
-.functions-container,
-.team-container {
-  padding: 120px 156px;
+.functions-container {
+  padding-bottom: 120px;
 }
 
 .functions-title {
@@ -219,6 +224,21 @@ img {
 }
 
 /* ===================== TEAM & PROJECTS ===================== */
+
+.team-title {
+  margin-bottom: 72px;
+}
+
+.projects-box {
+  padding: 96px 0 120px 0;
+}
+
+.project-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 48px;
+}
 
 .team-container {
   background: var(--minor-color);
@@ -230,10 +250,16 @@ img {
 }
 
 .team-member-card {
- 
+  padding-bottom: 32px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
-.card-title {
+.card-title,
+.team-card-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -241,10 +267,26 @@ img {
   color: var(--secondary-color);
 }
 
-.card-description {
+.card-title,
+.team-card-title {
+  margin-bottom: 8px;
+}
+
+.card-description,
+.team-card-description {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-color);
+}
+
+.team-img {
+  margin-bottom: 32px;
+}
+
+.projects-text {
+  padding: 32px 16px;
+  border: 1px solid #E7E9FC;
+  border-top: none;
 }
 
 .section-title {
@@ -265,6 +307,9 @@ img {
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--primary-brand-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .filter-btn:hover,
@@ -272,12 +317,25 @@ img {
   background: var(--active-contact-color);
   color: var(--nondescript-color);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/* ========================= FILTER ======================== */
+
+.filter-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
 }
 
 /* ========================= FOOTER ======================== */
 
 .footer {
   background-color: var(--secondary-color);
+  padding: 100px 0;
 }
 
 .footer-text {
@@ -285,6 +343,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--minor-color);
+  margin-top: 17px;
 }
 
 .footer-logo-tail {
